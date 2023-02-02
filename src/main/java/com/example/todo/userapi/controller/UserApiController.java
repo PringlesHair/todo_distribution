@@ -23,7 +23,7 @@ public class UserApiController {
     private final UserService userService;
 
     // 회원가입 요청 처리
-    @PostMapping("/signup")
+    @PostMapping("/signUp")
     public ResponseEntity<?> signUp(
             @Validated @RequestBody UserSignUpDTO signUpDTO
             , BindingResult result
