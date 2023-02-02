@@ -14,7 +14,7 @@ public class CorsConfig implements WebMvcConfigurer {
         registry.addMapping("/api/**")
                 .allowedOrigins("http://localhost:3000",
                         "http://practice-s3-jck-bucket001.s3-website.ap-northeast-2.amazonaws.com") // api요청 허용 URL
-                .allowedMethods("GET", "POST", "PUT", "DELETE")
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH")
                 .allowedHeaders("*")
                 .allowCredentials(true)
                 .maxAge(3600);

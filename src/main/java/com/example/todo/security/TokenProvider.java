@@ -33,7 +33,7 @@ public class TokenProvider {
                 //header에 들어갈 서명
                 .signWith(
                         Keys.hmacShaKeyFor(SECRET_KEY.getBytes())
-                        , SignatureAlgorithm.HS512
+                        , SignatureAlgorithm.HS256
                 )
                 .setSubject(userEntity.getId())  // sub: 토큰 식별자
                 .setIssuer("todo app") // iss: 발급자 정보

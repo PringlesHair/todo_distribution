@@ -70,7 +70,7 @@ public class UserApiController {
     }
 
     // 로그인 요청 처리
-    @PostMapping("/signin")
+    @PostMapping("/signIn")
     public ResponseEntity<?> signIn(
             @Validated @RequestBody LoginRequestDTO requestDTO) {
 
